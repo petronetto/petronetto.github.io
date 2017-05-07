@@ -1,0 +1,62 @@
+# Build settings
+gems:
+  - jemoji
+  - jekyll-paginate
+
+# Site settings
+title: "Juliano Petronetto"
+description: > # this means to ignore newlines until "email:"
+   Desenvolvimento web e mobile, Machine Learning, DevOps e coisas do tipo.
+
+email: a-mail@mail.mail
+#blog logo
+logo: "/assets/images/df_logo.jpg"
+float_logo: true # true, false (default)
+
+# blog cover
+cover: "/assets/images/cover.jpg"
+
+name: 'Juliano Petronetto'
+author: 'Juliano Petronetto'
+author_image: "/assets/images/author.jpg"
+
+paginate:	5
+
+url: "https://petronetto.github.io" # the base hostname & protocol for your site
+baseurl: ""
+permalink: /:year/:month/:day/:title
+#used to display twitter cards
+twitter_handle: '@jpetronetto'
+
+#fill in disqus shortname to use disqus
+disqus: petronetto
+
+# social icons and sharing options
+social:
+  - icon:	twitter
+    url:	https://twitter.com/jpetronetto
+    desc: Siga-me no twitter
+    share_url: http://twitter.com/share
+    share_title: ?text=
+    share_link: "&amp;url="
+
+#  - icon:	facebook
+#    url:	https://facebook.com/???
+#    desc: Connect with me facebook
+#    share_url: https://www.facebook.com/sharer.php
+#    share_title: ?t=
+#    share_link: "&amp;u="
+
+  - icon:	github
+    url:	https://github.com/petronetto
+    desc:	Fork no github
+    share_url:
+    share_title:
+    share_link:
+
+#  - icon:	google-plus
+#    url:	https://google.com/???
+#    desc:	Add me on google+
+#    share_url:
+#    share_title:
+#    share_link:
