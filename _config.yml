@@ -8,16 +8,20 @@ title: "Juliano Petronetto"
 description: > # this means to ignore newlines until "email:"
    Desenvolvimento web e mobile, Machine Learning, DevOps e coisas do tipo.
 
-email: a-mail@mail.mail
+# email: a-mail@mail.mail
 #blog logo
-logo: "/assets/images/df_logo.jpg"
+logo: "/assets/images/logo.jpg"
 float_logo: true # true, false (default)
+google_analytics: UA-98708697-1
+
+lang: "pt-BR"
 
 # blog cover
 cover: "/assets/images/cover.jpg"
 
 name: 'Juliano Petronetto'
 author: 'Juliano Petronetto'
+bio: 'Desenvolvedor full-stack, está estudando Machine Learning e promete criar a Skynet'
 author_image: "/assets/images/author.jpg"
 
 paginate:	5
