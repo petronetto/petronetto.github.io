@@ -5,7 +5,7 @@ date: 2017-05-08 01:46
 categories: laravel docker php
 tags: laravel docker php
 comments: true
-image: /assets/article_images/laravel-docker.png
+image: /assets/images/articles/docker-laravel.png
 ---
 
 Nesse artigo vou fazer uma breve introdução de como “Dockerizar” aplicação Laravel/PHP.
@@ -46,13 +46,13 @@ FROM alpine:3.5
 # Instalando os pacotes necessários
 # Note que instalaremos o Nginx juntamente com o PHP.
 # Na filosofia do Docker essa não é uma prática 
-# recomendável em todos os caso, pois o container
+# muito recomendável em todos os caso, pois o container
 # em geral, deve rodar apenas um processo
 # mas como o server interno od PHP não é recomendável
 # para produção usaremos o Nginx e para não ter 
-# que criar outro container apenas para o servodor
+# que criar outro container apenas para o servidor
 # web, instalaremos os dois no mesmo container
-# o o supervisor cuidará dos processos
+# e o supervisor cuidará dos processos
 RUN apk --update add --no-cache \
         nginx \
         curl \
@@ -76,7 +76,7 @@ RUN apk --update add --no-cache \
         php7-session
 # Limpando o cache das instalações
 # é sempre recomendável remover do 
-# container tudo aqui que não for mais 
+# container tudo aquilo que não for mais 
 # necessário após tudo configurado
 # assim o container fica menor
 RUN rm -Rf /var/cache/apk/*
@@ -91,7 +91,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin -
 
 # Configurando o Nginx
 # Aqui copiamos nosso arquivo de configuração para dentro do container
-# Note que ainda não criamos esse arquivo, criaremos mais a frente
+# Note que ainda não criamos esse arquivo, criaremos mais à frente
 COPY nginx.conf /etc/nginx/nginx.conf
 
 # Arquivo de configuração do supervisor
