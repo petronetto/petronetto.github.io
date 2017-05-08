@@ -41,7 +41,7 @@ layout: default
               <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
             </section>
             <div class="post-meta">
-              <time datetime="{{ post.date | date: "%m/%d/%Y" }}">{{ post.date | date: "%m/%d/%Y" }}</time>
+              <time datetime="{{ post.date | date: "%d/%m/%Y" }}">{{ post.date | date: "%d/%m/%Y" }}</time>
 <!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
             </div>
           </div>
@@ -53,12 +53,12 @@ layout: default
       {% if paginator.next_page %}
         <a class="newer-posts" href={{ "/page" | prepend: site.baseurl | append: paginator.next_page }}>&larr; Older posts</a>
       {% endif %}
-      <span class="page-number">Página {{ paginator.page }} of {{ paginator.total_pages }}</span>
+      <span class="page-number">Página {{ paginator.page }} de {{ paginator.total_pages }}</span>
       {% if paginator.previous_page %}
         {% if paginator.page == 2 %}
-          <a class="older-posts" href={{ "/" | prepend: site.baseurl }}>Newer posts &rarr;</a>
+          <a class="older-posts" href={{ "/" | prepend: site.baseurl }}>Novos posts &rarr;</a>
         {% else %}
-          <a class="older-posts" href={{ "/page" | prepend: site.baseurl | append: paginator.previous_page }}>Newer posts &rarr;</a>
+          <a class="older-posts" href={{ "/page" | prepend: site.baseurl | append: paginator.previous_page }}>Novos posts &rarr;</a>
         {% endif %}
       {% endif %}
     </nav>

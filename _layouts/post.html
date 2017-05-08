@@ -21,7 +21,7 @@
               <div class="author-image" style="background-image: url({{ site.author_image | prepend: site.baseurl }})">Blog Logo</div>
               <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ site.author }}</h4>
               on
-              <time datetime="{{ page.date | date: "%m/%d/%Y" }}">{{ page.date | date: "%m/%d/%Y" }}</time>
+              <time datetime="{{ page.date | date: "%d/%m/%Y" }}">{{ page.date | date: "%d/%m/%Y" }}</time>
               <!-- , tagged on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}} -->
             </div>
             <div style="text-align:center">
@@ -37,7 +37,7 @@
               <div class="author-image" style="background-image: url({{ site.author_image | prepend: site.baseurl }})">Blog Logo</div>
               <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ page.author }}</h4>
               on
-              <time datetime="{{ page.date | date: "%m/%d/%Y" }}">{{ page.date | date: "%m/%d/%Y" }}</time>
+              <time datetime="{{ page.date | date: "%d/%m/%Y" }}">{{ page.date | date: "%d/%m/%Y" }}</time>
               <!-- , tagged on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}} -->
             </div>
           </div>
@@ -73,7 +73,7 @@
               <h4>{{ site.author }}</h4>
               <p class="bio">{{site.bio}}</p>
               <hr>
-              <p class="Publicado">Publicado <time datetime="{{ page.date | date: "%m/%d/%Y" }}">{{ page.date | date: "%m/%d/%Y" }}</time></p>
+              <p class="Publicado">Publicado <time datetime="{{ page.date | date: "%d/%m/%Y" }}">{{ page.date | date: "%d/%m/%Y" }}</time></p>
             </section>
           </div>
           {{/post}}
