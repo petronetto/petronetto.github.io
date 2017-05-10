@@ -5,7 +5,6 @@ date: 2017-05-08 01:46
 categories: laravel docker php
 tags: laravel docker php
 comments: true
-crosspost_to_medium: true
 image: /assets/images/articles/docker-laravel.png
 ---
 
