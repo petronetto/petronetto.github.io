@@ -5,6 +5,7 @@ date: 2016-10-12 19:32
 categories: php
 tags: php
 comments: true
+crosspost_to_medium: true
 image: /assets/images/articles/php-traits.jpg
 ---
 

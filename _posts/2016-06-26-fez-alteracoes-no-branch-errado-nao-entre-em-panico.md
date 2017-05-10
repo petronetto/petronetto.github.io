@@ -5,6 +5,7 @@ date: 2016-06-26 18:00
 categories: git
 tags: git
 comments: true
+crosspost_to_medium: true
 image: /assets/images/articles/git.jpg
 ---
 
