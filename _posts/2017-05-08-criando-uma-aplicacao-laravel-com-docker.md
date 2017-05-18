@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Criado uma aplicação Laravel com Docker"
+title: "Criando uma aplicação Laravel com Docker"
 date: 2017-05-08 01:46
 categories: laravel docker php
 tags: laravel docker php
