@@ -8,15 +8,15 @@ comments: true
 image: /assets/images/articles/quality.jpg
 ---
 
-Nesse artigo vou dar uma breve introdução de como usar o SonarQube para garantir melhor qualidade do seu código.
+Nesse artigo vou dar uma breve introdução de como usar o SonarQube para garantir uma melhor qualidade do seu código.
 
 
 ## Introdução  
 
-Se você é dev minimamente preocupado com a qualidade dos softwares que você e sua equipe desenvolve, com toda certeza em algum momento você já pegou se questionando sobre a qualiade do software que você ou sua equipe desenvolveu ou está desenvolvendo.
-Mesmo que existam vários approachs para lidar com isso, a revisão "humana" sempre tende a ser muito... como posso dizer... humana!  
+Se você é um dev minimamente preocupado com a qualidade dos softwares que você e sua equipe desenvolvem, com toda certeza, em algum momento você já se pegou questionando-se sobre a qualidade do software que você ou sua equipe desenvolveram ou estão desenvolvendo.
+Mesmo que existam várias técnicas e métodos para se lidar com isso, a revisão "humana" sempre tende a ser muito... como posso dizer... humana.  
 
-A alguns anos atrás isso era uma tarefa não muito trivial, mas felizmente hoje em dia é muito mais simples, devido  ao advendo dos softwares de **code quality**, e uma das melhores na minha opnião é o [SonarQube](https://www.sonarqube.org)  
+A alguns anos era uma tarefa não muito trivial, mas felizmente hoje em dia é muito mais simples, devido ao advendo dos softwares de **code quality**, e uma das melhores e mais completas ferramentas desse tipo, na minha opnião é o [SonarQube](https://www.sonarqube.org)  
 
 
 
@@ -32,9 +32,9 @@ O SonarQube provê a capacidade de mostrar não apenas a saúde de uma aplicaç�
 
 ## Começando
 
-Para usar o SonarQube existem várias opções, você pode instalá-lo localmente, num seridor ou até mesmo usar o serviço de cloud fornecido pela Sonar. Para esse tutorial, por motivos de <i>eu quero</i> comodidade, usarei uma imagem Docker que criei para usar nos meus projetos, então, assegure que você tem o Docker instalado e funcionado.
+Para usar o SonarQube existem várias opções, você pode instalá-lo localmente, num seridor ou até mesmo usar o serviço de cloud fornecido pela Sonar. Para esse tutorial, por motivos de <s>eu quero</s> comodidade, usaremos uma imagem Docker que criei para usar nos meus projetos, sendo assim, assegure que você tem o Docker instalado e funcionado.
 
-Além do SonarQube, você também precisa do Sonnar Scanner, que nada mais é que um executável que irá realizar o scan do seu código e enviá-lo para o sua aplicação do SonarQube. Como eu odeio ficar instalando milhões de ferramentas, no container que usarei o Sonar Scanner já está instalado.
+Além do SonarQube, também iremos precisar do Sonnar Scanner, que nada mais é que um executável que irá realizar o scan do nosso código e enviá-lo para o sua aplicação do SonarQube. Como eu odeio ficar instalando milhões de ferramentas, felizmente, no container que usarei o Sonar Scanner já está instalado.
 
 
 
@@ -50,7 +50,7 @@ Aguarde alguns instantes até que o serviço possar ser iniciado e acesse `http:
 
 Clique em login entre com as credenciais `admin`, senha `admin`. Ao logar irá surgir um pop-up, click em `Skip this tutorial`.
 
-Pronto, agora você já tem um servidor do SonarQube funcional, pronto para receber os scans do seu código. Para isso você tem duas opções, baixar o [Sonnar Scanner](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner) localmente, ou usar o que está disponível no container que está rodando o SonarQube. Usaremos a segunda opção, mas antes, vá até `http://localhost:9000/updatecenter/` e verifique se o plugin para sua liguagem está instalado. O SonarQube por padrão já trás alguns plugins para C#, Python, Java PHP, JavaScript e outros. Caso sua linguagem não esteja na listagem do Update Center, dê uma Googlada e provavelmente vai achar uma modo de instalar ;)
+Pronto, agora você já tem um servidor do SonarQube funcional, pronto para receber os scans do seu código. Para isso você tem duas opções, baixar e instalar o [Sonnar Scanner](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner) localmente, ou usar o que está disponível no container que está rodando o SonarQube. Usaremos a segunda opção, mas antes, vá até `http://localhost:9000/updatecenter/` e verifique se o plugin para sua liguagem está instalado. O SonarQube por padrão já vem com C#, Python, Java PHP, JavaScript e outros. Caso sua linguagem não esteja na listagem do Update Center, dê uma Googlada e provavelmente vai achar uma modo de instalar ;)
 
 Agora vamos fazer a análise do nosso código, basta rodar o comando:
 {% highlight sh %}
