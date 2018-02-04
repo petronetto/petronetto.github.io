@@ -46,14 +46,16 @@ Temos que criar agora os arquivos de configuração do Nginx e do Supervisor.
 
 ### Nginx
 Crie um arquivo chamando `nginx.conf` com o conteúdo abaixo:
->> Note que essa é uma configuração **BÁSICA** do Nginx, não entrarei em detalhes dela. Procure na documentação oficial ou em outros blogs sobre esse assunto.
+>> Note que essa é uma configuração **BÁSICA** do Nginx, não entrarei em detalhes dela. Procure na documentação oficial ou em outros blogs sobre esse assunto.  
+
 {% gist c5c19ca8ad443ad31feeceeff8751b0b %}
 
 ### Supervisor
 Crie agora o aquivo de configuração do Supervisor. Ele será responsável por monitorar e gerenciar os processo do PHP e do Nginx, e caso algum dos processos morra ele irá reiniciá-los.  
 Crie o arquivo `supervisord.conf`, com o conteúdo abaixo:
 
->> Novamente não entrarei no mérito dessas configurações, consulte a documentação oficial para mais detalhes: [supervisord.org](http://supervisord.org/)
+>> Novamente não entrarei no mérito dessas configurações, consulte a documentação oficial para mais detalhes: [supervisord.org](http://supervisord.org/)  
+
 {% gist 8bb69c3e3d70220058010ad5a109fea2 %}
 
 ## Fazendo a build do container
@@ -227,7 +229,7 @@ Um outro *disclaimer* importante, é: como eu disse, esse container é apenas pa
 
 
 ## Finalizando final finalmente
-[Aqui](https://github.com/petronetto/laravel-docker) eu tenho basicamente tudo isso que foi ensinado aqui, é uma container mais "production ready". Dá uma conferida no [meu GitHub](https://github.com/petronetto) e lá vão ter vários outros containers interessantes que uso para facilitar meu dia-a-dia.  
+[Aqui](https://github.com/petronetto/laravel-docker) eu tenho basicamente tudo isso que foi ensinado aqui, é uma container mais "production ready". Dá uma conferida no meu [GitHub](https://github.com/petronetto) e lá vão ter vários outros containers interessantes que uso para facilitar meu dia-a-dia.  
 
 É isso ai… Por hoje é só pessoal!  
 Qualquer dúvida <s>pesquisa no Google porra!</s> poste nos comentários.
