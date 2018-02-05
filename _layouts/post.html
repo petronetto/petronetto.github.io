@@ -4,10 +4,6 @@
 <html>
   {% include head.html %}
   <body itemscope itemtype="http://schema.org/Article">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N78S9K4"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     {% include header.html %}
     <main class="content" role="main">
       <article class="post">
@@ -85,7 +81,7 @@
             <h5 class="index-headline featured"><span></span></h5>
             <footer class="site-footer">
               <section class="poweredby">Publicado com <a href="http://jekyllrb.com"> Jekyll</a></section>
-              <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip"> <i class="fa fa-rss"></i>Inscreva-se no feed.</span></a>
+              <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip"> <i class="fa fa-rss"></i> Inscreva-se no feed. </span></a>
               <div class="inner">
                 <section class="copyright">Copyright <a href="{{@blog.url}}/">{{site.author}}</a> &copy; {{ site.time | date: '%Y' }}<br>Todos os direitos reservados.</section>
               </div>
