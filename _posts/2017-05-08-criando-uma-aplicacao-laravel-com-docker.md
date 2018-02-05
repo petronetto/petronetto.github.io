@@ -51,20 +51,24 @@ Crie um arquivo chamando `nginx.conf` com o conteúdo abaixo:
 {% gist c5c19ca8ad443ad31feeceeff8751b0b %}
 
 ### Supervisor
-Crie agora o aquivo de configuração do Supervisor. Ele será responsável por monitorar e gerenciar os processo do PHP e do Nginx, e caso algum dos processos morra ele irá reiniciá-los.  
+Crie agora o arquivo de configuração do Supervisor. Ele será responsável por monitorar e gerenciar os processo do PHP e do Nginx, e caso algum dos processos morra ele irá reiniciá-los.  
 Crie o arquivo `supervisord.conf`, com o conteúdo abaixo:
 
 >> Novamente não entrarei no mérito dessas configurações, consulte a documentação oficial para mais detalhes: [supervisord.org](http://supervisord.org/)  
 
 {% gist 8bb69c3e3d70220058010ad5a109fea2 %}
 
-## Fazendo a build do container
-Bom, tudo configurado agora vamos fazer a build do nosso container, mas antes, faça seu cadastro no [Docker Hub](https://hub.docker.com/), pois vamos fazer o push do nosso container.
+## Fazendo build do container
+Bom, tudo configurado agora vamos fazer o build do nosso container, mas antes, faça seu cadastro no [Docker Hub](https://hub.docker.com/), pois vamos fazer o push do nosso container.
 
 >> Dica do sucesso: use o mesmo nome do usuário do GitHub, não é necessário, mas vai por mim…
 
+Após ter feito o cadastro, vá até seu terminal e rode o comando de login:
 
-Para fazer a build nós vamos usar o comando `build`, seguido da tag `-t usuario/container`. A tag do container, é basicamente o seu nome de **usuário no Docker Hub / nome do container**, e por fim a localização do `Dockerfile`, partindo do pressuposto que está no mesmo diretório, iremos usar o `.`, que como você sabe (ou ao menos deveria saber), indica o diretório atual. O meu ficaria assim: 
+`docker login`
+
+
+Para fazer o build nós vamos usar o comando `build`, seguido da tag `-t usuario/container`. A tag do container, é basicamente o seu nome de **usuário no Docker Hub / nome do container**, e por fim a localização do `Dockerfile`, partindo do pressuposto que está no mesmo diretório, iremos usar o `.`, que como você sabe (ou ao menos deveria saber), indica o diretório atual. O meu ficaria assim: 
 
 `docker build -t petronetto/docker-laravel . ` 
 
@@ -73,7 +77,7 @@ Se tudo correu bem, ao usar o comando `docker images` você verá o container do
 ## Push para Docker Hub
 Uma vez que o container está “buildado”, você pode fazer o push para o Docker Hub com o comando: 
 `docker push usuario/nome-do-container:tag`
-A tag é optional, caso ela não seja informada por padrão a tag será `latest`.
+A tag é opcional, caso ela não seja informada por padrão a tag será `latest`.
 
 No caso do nosso exemplo seria:  
 `docker push petronetto/docker-laravel`
@@ -94,9 +98,9 @@ docker run -it --rm \
 
 Explicando o comando acima:  
 
-- `it`: exibir o terminal iterativo, ou seja, o seu terminal exibirá as mensagens que forem exibidas no container.
-- `rm`: remove o container após a execução do comando. Pode parecer inútil, mas depois de um tempo, você tira uma série de coisas da sua máquina, como Nginx, banco de dados e tal. Como você estará rodando no Docker, não faz sentido ter isso instalado localmente, sendo assim, quando você necessitar pode usar os recursos de um do seus container, como estamos fazendo agora, será muito útil.
-- `v $(pwd):/app`: está fazendo um bind do volume do container Docker onde está a pasta `/app`, para diretório atual `$(pwd)`. Isso signigica, que qualquer alteração dentro da pata `/app` do container, vai refletir na sua pasta local.
+- `-it`: exibir o terminal iterativo, ou seja, o seu terminal exibirá as mensagens que forem exibidas no container.
+- `--rm`: remove o container após a execução do comando. Pode parecer inútil, mas depois de um tempo, você tira uma série de coisas da sua máquina, como Nginx, banco de dados e tal. Como você estará rodando no Docker, não faz sentido ter isso instalado localmente, sendo assim, quando você necessitar pode usar os recursos de um do seus container, como estamos fazendo agora, será muito útil.
+- `-v $(pwd):/app`: está fazendo um bind do volume do container Docker onde está a pasta `/app`, para diretório atual `$(pwd)`. Isso significa, que qualquer alteração dentro da pasta `/app` do container, vai refletir na sua pasta local.
 
 Os demais comando são o nome do container em questão e o comando que você quer executar dentro dele. Mais pra adiante falarei mais detalhes sobre isso.
 
@@ -116,7 +120,7 @@ docker run -p 8080:80 \
 Nesse commando:
 
 - `-p 8080:80` é para fazer o bind da sua porta 8080 com a porta 80 do container, sendo a ordem: `local:container`.
-- `-v $(pwd)/app:/app` como expliquei anteriormente, faz o bind da pasta app que foi criada no seu diretório com a `/app` dentro do container. Todas alteração feitas no diretório local refletirá no do container e vise-versa.
+- `-v $(pwd)/app:/app` como expliquei anteriormente, faz o bind da pasta app que foi criada no seu diretório com a `/app` dentro do container. Todas alterações feitas no diretório local refletirá imediatamente no do container e vise-versa.
 - `--name webserver` é bem óbvio esse não é? É o nome da criança.
 - `-d` é para rodar em modo *daemon*, ou seja, ele vai subir o container e liberar seu terminal, sem esse comando seu terminal ficará preso como quando você executa `php artisan serve`.
 
@@ -154,14 +158,11 @@ services:
       POSTGRES_PASSWORD: secret
     volumes:
       - ./database:/var/lib/postgresql
-volumes:
-   data:
-      driver: local
 {% endhighlight %}
 
 >> Caso você queira fazer build direto pelo docker-compose, também é possível, altere a linha `image: petronetto/docker-laravel` para `build: .`.
 
-Observe que estavamos usando o `Postgres` como banco de dados, pois ele tem uma versão do Alpine, que é uma distro Linux bem leve e pequena.  Caso queira usar o `MySQL` basta alterar o nome da imagem e as variáveis em `environment`. Mais detalhes [aqui](https://hub.docker.com/_/mysql/).
+Observe que estamos usando o `Postgres` como banco de dados, pois ele tem uma versão do Alpine, que é uma distro Linux bem leve e pequena.  Caso queira usar o `MySQL` basta alterar o nome da imagem e as variáveis em `environment`. Mais detalhes [aqui](https://hub.docker.com/_/mysql/).
 
 Agora altere o seu `.env`:
 {% highlight sh %}
@@ -202,10 +203,10 @@ No decorrer, pode ser que ocorra algum erro e você precise remover ou parar o c
 `docker images`: lista todos as imagens. 
 `docker ps`: lista todos os container em execução. 
 `docker ps -a`: lista todos os containers. 
-`docker stop <id_do_container>`: preciso exlicar? 
-`docker restart <id_do_container>`: preciso exlicar? 
+`docker stop <id_do_container>`: preciso explicar? 
+`docker restart <id_do_container>`: preciso explicar? 
 `docker rm <id_do_container>`: remove um container. 
-`docker rmi <id_do_image>`: remove uma imagem. Use o `-f` para forçar caso necessário.  
+`docker rmi <id_da_imagem>`: remove uma imagem. Use o `-f` para forçar caso necessário.  
 
 Também é possível combinar comandos para fazer umas coisas mais marotas ainda:
 
@@ -228,7 +229,7 @@ Como está dito no início do post, isso é uma *introdução*, para o bem e sa�
 Um outro *disclaimer* importante, é: como eu disse, esse container é apenas para dar uma introdução, então muitas coisas não foram explicadas, e também não vá logo usando esse container num ambiente produtivo, aprenda um pouco mais sobre o Docker e no tempo certo aplique o que aprendeu em produção.
 
 
-## Finalizando final finalmente
+## Finalizando o final, finalmente...
 [Aqui](https://github.com/petronetto/laravel-docker) eu tenho basicamente tudo isso que foi ensinado aqui, é uma container mais "production ready". Dá uma conferida no meu [GitHub](https://github.com/petronetto) e lá vão ter vários outros containers interessantes que uso para facilitar meu dia-a-dia.  
 
 É isso ai… Por hoje é só pessoal!  
