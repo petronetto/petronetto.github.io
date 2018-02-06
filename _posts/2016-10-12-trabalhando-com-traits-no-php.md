@@ -16,9 +16,9 @@ Primeiro temos nossa classe Log, que serviria pra salvar mensagens de log (imagi
 
 {% highlight php %}
 <?php
-class Log 
+class Log
 {
-    public function log($message) 
+    public function log($message)
     {
         // Salva $message em um log de alguma forma
     }
@@ -29,14 +29,14 @@ E agora você tem outras classes que fazem uso dessa funcionalidade (salvar logs
 
 {% highlight php %}
 <?php
-Class Usuario extends Model 
+Class Usuario extends Model
 {
     protected $Log;
-    public function __construct() 
+    public function __construct()
     {
         $this->Log = new Log();
     }
-    public function save() 
+    public function save()
     {
         // Salva o usuário de alguma forma
         // ...
@@ -45,14 +45,14 @@ Class Usuario extends Model
     }
 }
 
-class Carrinho extends Produto 
+class Carrinho extends Produto
 {
     protected $Log;
-    public function __construct() 
+    public function __construct()
     {
         $this->Log = new Log();
     }
-    public function clear() 
+    public function clear()
     {
         // Limpa o carrinho de alguma forma
         // ...
@@ -68,9 +68,9 @@ Já a partir da versão 5.4, podemos transformar a classe Log numa Trait:
 
 {% highlight php %}
 <?php
-trait Log 
+trait Log
 {
-    public function log($message) 
+    public function log($message)
     {
         // Salva $message em um log de alguma forma
     }
@@ -81,10 +81,10 @@ E manter o comportamento das nossas classes, de forma bem mais simples:
 
 {% highlight php %}
 <?php
-Class Usuario extends Model 
+Class Usuario extends Model
 {
     use Log;
-    public function save() 
+    public function save()
     {
         // Salva o usuário de alguma forma
         // ...
@@ -96,10 +96,10 @@ Class Usuario extends Model
 
 {% highlight php %}
 <?php
-Class Carrinho extends Produto 
+Class Carrinho extends Produto
 {
     use Log;
-    public function clear() 
+    public function clear()
     {
         // Limpa o carrinho de alguma forma
         // ...
