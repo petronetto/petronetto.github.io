@@ -31,7 +31,7 @@ url: "https://petronetto.github.io" # the base hostname & protocol for your site
 baseurl: ""
 permalink: /:year/:month/:day/:title
 #used to display twitter cards
-twitter_handle: '@jpetronetto'
+twitter_handle: '@petronettodev'
 
 #fill in disqus shortname to use disqus
 disqus: petronetto
@@ -39,14 +39,14 @@ disqus: petronetto
 # social icons and sharing options
 social:
   - icon:	twitter
-    url:	https://twitter.com/jpetronetto
+    url:	https://twitter.com/petronettodev
     desc: Não me siga no twitter
     share_url: http://twitter.com/share
     share_title: ?text=
     share_link: "&amp;url="
 
   - icon:	facebook
-    url:	https://facebook.com/JulianoPetronetto
+    url:	https://facebook.com/petronettodev
     desc: Não me adicione no facebook
     share_url: https://www.facebook.com/sharer.php
     share_title: ?t=
