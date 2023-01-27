@@ -3,7 +3,7 @@ layout: resume
 title: Juliano Petronetto - Senior Software Engineer
 permalink: /resume
 ---
-![Contancts](/assets/images/cover.jpg)
+![Contancts](/assets/images/qrcode.jpg)
 
 JULIANO PETRONETTO
 =====================================================================================================
