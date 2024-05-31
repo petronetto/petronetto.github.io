@@ -18,27 +18,54 @@ JULIANO PETRONETTO
 |**E-mail**    | juliano@petronetto.dev  |**Skype**        | juliano.petronetto                     |
 
 
+Professional Summary
+-----------------------------------------------------------------------------------------------------
+Senior Software Engineer with over 15 years of experience specializing in Backend Development, RESTful APIs, and Web Development. Proficient in all stages of the development lifecycle for dynamic projects. Expertise in multiple programming languages including Python, PHP, Golang, and Node.js. Skilled in database management with MySQL, PostgreSQL, Elasticsearch, and MongoDB. Extensive experience with Docker containers, Git, CI/CD tools, Unit Testing, and Quality Assurance. Strong knowledge in design patterns, SOLID principles, and code optimization. Additionally, possess foundational knowledge in Machine Learning, enhancing capability to integrate intelligent systems into software solutions.
+
+
 Experience
 -----------------------------------------------------------------------------------------------------
 
-2019-10 present
-:   **Senior Software Engineer - apilayer**
+2023-04 present
+:   **Senior Software Engineer - DocFinder**
 
-    As a skilled developer with experience in developing RESTful API's,
-    I have successfully contributed to the apilayer portfolio.
+    At DocFinder, I am responsible for developing and maintaining high-quality software solutions
+    while leveraging my expertise in Python and PHP. I mentor junior developers, perform code reviews,
+    and implement AI-based solutions to enhance our services.
 
     My responsibilities include:
 
-    - Design and implement cloud-based services, microservices and RESTful API's
-    - Develop and maintain reliable, scalable, well-tested and documented code
+    - Design and implement cloud-based services, microservices, and RESTful APIs
+    - Develop and maintain reliable, scalable, well-tested, and documented code
+    - Mentor junior developers and conduct code reviews
+    - Implement AI-based solutions to improve our services
     - Participate in the resolution of support issues and feature requests
     - Collaborate and share knowledge with other team members
-    - Help maintain code quality, organization, and automatization
+    - Help maintain code quality, organization, and automation
     - Write unit and automation tests
 
     Stack used:
 
-    PHP (Symfony), Python, Mongo, Elasticsearch, JavaScript
+    Python, PHP (Laravel/Symfony), PostgreSQL, Elasticsearch, Docker, AWS, Terraform
+
+2019-10 2023-04
+:   **Senior Software Engineer - APILayer**
+
+    As a skilled developer specializing in the development of RESTful APIs,
+    I have made significant contributions to the APILayer portfolio.
+    I was responsible for creating the following APIs from the ground up:
+
+    - positionstack: https://positionstack.com
+    - mediastack: https://mediastack.com
+    - countrylayer: https://countrylayer.com
+    - currencylayer: https://currencylayer.com
+    - financelayer: https://apilayer.com/marketplace/financelayer-api
+
+    Additionally, I provided maintenance and performed extensive rewrites for several other APIs within the portfolio.
+    
+    Stack used:
+
+    PHP (Symfony), Python, Mongo, Elasticsearch, Node.js, Docker, AWS
 
 2019-01 2019-10
 :   **Senior Software Engineer - Shpock**
@@ -54,7 +81,7 @@ Experience
 
     Stack used:
 
-    PHP, Mongo, Elasticsearch, JavaScript
+    PHP, Docker, MongoDB, Elasticsearch
 
 2016-05 2018-08
 :   **Lead Software Engineer - PicPay**
