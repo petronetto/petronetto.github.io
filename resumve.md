@@ -3,7 +3,7 @@ layout: resume
 title: Juliano Petronetto - Senior Software Engineer
 permalink: /resume
 ---
-![Contancts](/assets/images/qrcode.png)
+![Contacts](/assets/images/qrcode.png)
 
 JULIANO PETRONETTO
 =====================================================================================================
@@ -15,45 +15,41 @@ JULIANO PETRONETTO
 |--------------|-------------------------|-----------------|----------------------------------------|
 |**Address**   | Vienna, Austria         |**GitHub**       | https://github.com/petronetto          |
 |**Mobile**    | +43 660 283 1976        |**LinkedIn**     | https://www.linkedin.com/in/petronetto |
-|**E-mail**    | juliano@petronetto.dev  |**Skype**        | juliano.petronetto                     |
+|**E-mail**    | juliano@petronetto.dev  |**Resume**       | https://petronetto.dev/resume          |
 
 
 Professional Summary
 -----------------------------------------------------------------------------------------------------
-Senior Software Engineer with over 15 years of experience specializing in Backend Development, RESTful APIs, and Web Development. Proficient in all stages of the development lifecycle for dynamic projects. Expertise in multiple programming languages including Python, PHP, Golang, and Node.js. Skilled in database management with MySQL, PostgreSQL, Elasticsearch, and MongoDB. Extensive experience with Docker containers, Git, CI/CD tools, Unit Testing, and Quality Assurance. Strong knowledge in design patterns, SOLID principles, and code optimization. Additionally, possess foundational knowledge in Machine Learning, enhancing capability to integrate intelligent systems into software solutions.
+Senior Software Engineer with over 15 years of experience specializing in Backend Development, RESTful APIs, and Web Development. Proficient in all stages of the development lifecycle for dynamic projects. Expertise in multiple programming languages including Python, PHP, Golang, and Node.js. Skilled in database management with MySQL, PostgreSQL, Elasticsearch, and MongoDB. Extensive experience with Docker containers, Git, CI/CD tools, Unit Testing, and Quality Assurance. Strong knowledge in design patterns, SOLID principles, code optimization, performance tuning, and building scalable systems. Experienced with LLMs and AI tools, with foundational knowledge in Machine Learning to integrate intelligent systems into software solutions.
 
 
 Experience
 -----------------------------------------------------------------------------------------------------
 
-2023-04 present
+Apr 2023/Present
 :   **Senior Software Engineer - DocFinder**
 
-    At DocFinder, I am responsible for developing and maintaining high-quality software solutions
-    while leveraging my expertise in Python and PHP. I mentor junior developers, perform code reviews,
-    and implement AI-based solutions to enhance our services.
+    At DocFinder, I develop and maintain high-quality software solutions using Python and PHP. I guide junior developers through code reviews and mentorship while implementing AI-driven features to improve our services.
 
-    My responsibilities include:
+    My key responsibilities include:
 
-    - Design and implement cloud-based services, microservices, and RESTful APIs
-    - Develop and maintain reliable, scalable, well-tested, and documented code
-    - Mentor junior developers and conduct code reviews
-    - Implement AI-based solutions to improve our services
-    - Participate in the resolution of support issues and feature requests
-    - Collaborate and share knowledge with other team members
-    - Help maintain code quality, organization, and automation
-    - Write unit and automation tests
+    - Design and build cloud-based services, microservices, and RESTful APIs
+    - Create reliable, scalable, well-tested, and documented code
+    - Mentor developers and review code to ensure quality standards
+    - Build AI-based solutions that enhance our platform
+    - Resolve support issues and implement feature requests
+    - Share knowledge and collaborate with team members
+    - Maintain high standards for code quality, organization, and automation
+    - Develop unit and automation tests
 
     Stack used:
 
     Python, PHP (Laravel/Symfony), PostgreSQL, Elasticsearch, Docker, AWS, Terraform
 
-2019-10 2023-04
+Oct 2019/Nov 2022
 :   **Senior Software Engineer - APILayer**
 
-    As a skilled developer specializing in the development of RESTful APIs,
-    I have made significant contributions to the APILayer portfolio.
-    I was responsible for creating the following APIs from the ground up:
+    As a developer specializing in RESTful APIs, I made key contributions to the APILayer portfolio with a focus on performance optimization and scalability. I built the following APIs from scratch, ensuring they could handle high-volume traffic efficiently:
 
     - positionstack: https://positionstack.com
     - mediastack: https://mediastack.com
@@ -61,29 +57,29 @@ Experience
     - currencylayer: https://currencylayer.com
     - financelayer: https://apilayer.com/marketplace/financelayer-api
 
-    Additionally, I provided maintenance and performed extensive rewrites for several other APIs within the portfolio.
+    I also maintained and rewrote several APIs in the portfolio, optimizing them for better performance, reduced latency, and improved scalability.
     
     Stack used:
 
     PHP (Symfony), Python, Mongo, Elasticsearch, Node.js, Docker, AWS
 
-2019-01 2019-10
+Jan 2019/Oct 2019
 :   **Senior Software Engineer - Shpock**
 
     At Shpock I helped to create new features, refactor legacy code and bug fixes.
-    I also successfully achieved to increase exponentially the number of unit test in the codebase.
+    I also successfully achieved to increase exponentially the number of unit tests in the codebase.
 
     Some of my main duties also include:
 
     - Collaborate and share knowledge with other team members
-    - Help maintain code quality, organization, and automatization
+    - Help maintain code quality, organization, and automation
     - Write unit and automation tests
 
     Stack used:
 
     PHP, Docker, MongoDB, Elasticsearch
 
-2016-05 2018-08
+May 2016/Aug 2018
 :   **Lead Software Engineer - PicPay**
 
     At PicPay, I was privileged to lead a talented team in the development of microservices,
@@ -97,7 +93,7 @@ Experience
     Backend: PHP (Laravel/Lumen), PHPUnit, Python (Flask, scikit-learn)
     Others: Docker, Rancher, Git, Gitflow, SonarQube
 
-2010-02 2018-08
+Feb 2010/Aug 2018
 :   **Lead Software Engineer - Petronetto DevTech**
 
     I founded my own company and led a small team in the development of various projects including
@@ -123,7 +119,7 @@ Experience
 Education
 -----------------------------------------------------------------------------------------------------
 
-2013-07 2016-03
+Jul 2013/Mar 2016
 :   **Technology in Systems Analysis and Development**
 
     FAESA - Vitória, Brazil
@@ -132,14 +128,14 @@ Education
 Volunteer Work
 -----------------------------------------------------------------------------------------------------
 
-2018-02 2018-08
+Feb 2018/Aug 2018
 :   **Programming Teacher**
 
-    ProgramadoresDoAmanha.org (means "Tomorrow's Developers" in portuguese) is a social initiative
-    in Brazil that aims to empower young individuals from disadvantaged and low-income backgrounds 
-    by providing them with professional training in the field of computing. As a volunteer programming 
-    teacher, I had the opportunity to impart my knowledge and skills to the students by teaching them 
-    Python, HTML, CSS, MySQL and the foundational concepts of computer science, equipping them with 
-    the necessary tools to excel as developers in the job market. Through this experience, I was able 
-    to make a positive impact on the lives of these young people from underprivileged families and 
-    contribute to their professional development.
+    The social project "Programadores do Amanhã," which stands for "Tomorrow's Developers" in Portuguese, 
+    is a social initiative in Brazil that empowers young individuals from disadvantaged backgrounds 
+    by providing professional training in computing. As a volunteer programming teacher, I taught 
+    Python, HTML, CSS, MySQL, and foundational computer science concepts, equipping students with 
+    the necessary skills to pursue careers as developers. Through this experience, I made a positive 
+    impact on the lives of these young people and contributed to their professional development.
+
+    Website: https://programadoresdoamanha.org
