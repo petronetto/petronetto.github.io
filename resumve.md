@@ -49,7 +49,7 @@ Apr 2023/Present
 Oct 2019/Nov 2022
 :   **Senior Software Engineer - APILayer**
 
-    As a core developer at APILayer, I built production-grade RESTful APIs and SDk's from scratch, serving millions of requests daily across a global user base. I specialized in creating developer-friendly API interfaces with comprehensive documentation, robust error handling, and performance optimization.
+    As a core developer at APILayer, I built production-grade RESTful APIs and SDK's from scratch, serving millions of requests daily across a global user base. I specialized in creating developer-friendly API interfaces with comprehensive documentation, robust error handling, and performance optimization.
 
     I independently designed, built, and maintained the following high-traffic APIs:
 
