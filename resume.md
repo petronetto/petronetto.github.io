@@ -26,7 +26,7 @@ Senior Software Engineer with over 15 years of experience specializing in Backen
 Experience
 -----------------------------------------------------------------------------------------------------
 
-Apr 2023/Present
+Jan 2023/Present
 :   **Senior Software Engineer - DocFinder**
 
     At DocFinder, I develop and maintain high-quality software solutions using Python and PHP. I guide junior developers through code reviews and mentorship while implementing AI-driven features to improve our services.
