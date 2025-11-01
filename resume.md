@@ -29,7 +29,7 @@ Experience
 Jan 2023/Present
 :   **Senior Software Engineer - DocFinder**
 
-    At DocFinder, I develop and maintain high-quality software solutions using Python and PHP. I guide junior developers through code reviews and mentorship while implementing AI-driven features to improve our services.
+    At DocFinder, I develop and maintain high-quality software solutions using Python, PHP, and Node.js. I guide junior developers through code reviews and mentorship while implementing AI-driven features to improve our services.
 
     My key responsibilities include:
 
@@ -69,7 +69,7 @@ Oct 2019/Nov 2022
     
     Stack used:
 
-    Python (Flask), PHP (Symfony), MongoDB, Elasticsearch, Node.js, Docker, AWS, SonarQube
+    Python (Flask), PHP (Symfony), MongoDB, Elasticsearch, Node.js (Express), Docker, AWS, SonarQube
 
 Jan 2019/Oct 2019
 :   **Senior Software Engineer - Shpock**
@@ -104,13 +104,13 @@ May 2016/Aug 2018
 Feb 2010/Aug 2018
 :   **Lead Software Engineer - Petronetto DevTech**
 
-    Founded and led a development company, managing a team in building diverse projects including RESTful APIs, web applications, and mobile apps for various clients.
+    Founded and led a outsourcing development company, managing a team in building diverse projects including RESTful APIs, web applications, and mobile apps for various clients.
 
     Selected projects:
 
-    - **BeeBee App**: Led development of mobile app, RESTful API, and admin dashboards using Ionic 3, Angular, Laravel, PostgreSQL, Redis, and Pusher for real-time features
-    - **Gazeta Online**: Developed high-traffic news portal using Node.js and Vue.js, achieving excellent scalability with Docker and Rancher
-    - **VitoriaShip**: Built ship management system with Laravel, MySQL, Bootstrap, and Vue.js, focusing on performance and usability
+    - [**BeeBee App**](https://positionstack.com): Led development of mobile app, RESTful API, and admin dashboards using Ionic 3, Angular, Laravel, PostgreSQL, Redis, and Pusher for real-time features
+    - [**Gazeta Online**](https://www.agazeta.com.br): Developed high-traffic search for this news portal using Node.js and Vue.js, achieving excellent scalability with Docker and Rancher
+    - [**VitoriaShip**](https://www.vitoriaship.com.br): Built ship management system with Laravel, MySQL, Bootstrap, and Vue.js, focusing on performance and usability
 
 
 Education
